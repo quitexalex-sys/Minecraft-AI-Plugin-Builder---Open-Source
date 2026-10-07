@@ -1,0 +1,721 @@
+
+======================================================================
+MINECRAFT AI PLUGIN BUILDER
+======================================================================
+Ollama URL: http://127.0.0.1:11434
+Modello: qwen2.5-coder:7b
+✓ Ollama online.
+✓ Modello compatibile trovato: qwen2.5-coder:3b
+
+======================================================================
+SERVER AVVIATO
+======================================================================
+Website: http://127.0.0.1:12000
+Ollama: http://127.0.0.1:11434
+Model: qwen2.5-coder:7b
+
+Premi CTRL+C per fermare il server.
+
+[WEB] "GET / HTTP/1.1" 200 -
+[WEB] code 404, message Not Found
+[WEB] "GET /favicon.ico HTTP/1.1" 404 -
+[WEB] "GET /api/settings HTTP/1.1" 200 -
+
+======================================================================
+WEB REQUEST
+======================================================================
+MODE: edit
+MODEL: qwen2.5-coder:7b
+Plugin: FizzyGames, I want so u can /vote Anvill Falling intead of /vote anvilfall, also, add a new game: Hide N seek, to the game rotation, that can be setup with /hidenseek, there is /hidenseek setworld, /hidenseek addhiderspawn, /hidenseek setlobby /hidenseek setcountingzone, /hidenseek setseekerspawn, and also make so you cant drop stuff while in game, hidenseek: The hider will have full netherite and one hit netherite sword and glowing, he will be tpd at Counting Zone at game start, but hiders will be tpd to Hider Spawns, the hiders will have 30 seconds to hide, then the seeker will be tpd at the Seeker Spawn and has to eliminate hiders, then hiders has to hide and not get cought, there is a 3 minute timer then the hiders wins, the timer will be shown in a seperate bossbar. Also make so the winning effect only plays when u win, not at loss or death. U CAN DO THIS. also fix this bug: ============================================================ TENTATIVO 1/5 ============================================================ MAVEN: compilazione... [INFO] Scanning for projects... [INFO] [INFO] ----------------------< it.fizzygames:FizzyGames >---------------------- [INFO] Building FizzyGames 1.0.0 [INFO] from pom.xml [INFO] --------------------------------[ jar ]--------------------------------- Downloading from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml Progress (1): 0.4/2.4 kB Progress (1): 1.7/2.4 kB Progress (1): 2.4 kB Downloaded from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml (2.4 kB at 3.8 kB/s) [INFO] [INFO] --- clean:3.2.0:clean (default-clean) @ FizzyGames --- [INFO] Deleting C:\MinecraftAI\projects\FizzyGames\target [INFO] [INFO] --- resources:3.4.0:resources (default-resources) @ FizzyGames --- [INFO] Copying 2 resources from src\main\resources to target\classes [INFO] [INFO] --- compiler:3.11.0:compile (default-compile) @ FizzyGames --- [INFO] Changes detected - recompiling the module! :source [INFO] Compiling 53 source files with javac [debug target 21] to target\classes [INFO] Annotation processing is enabled because one or more processors were found on the class path. A future release of javac may disable annotation processing unless at least one processor is specified by name (-processor), or a search path is specified (--processor-path, --processor-module-path), or annotation processing is enabled explicitly (-proc:only, -proc:full). Use -Xlint:-options to suppress this message. Use -proc:none to disable annotation processing. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Some input files use or override a deprecated API. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Recompile with -Xlint:deprecation for details. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: C:\MinecraftAI\projects\FizzyGames\src\main\java\it\fizzygames\bots\BotManager.java uses unchecked or unsafe operations. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: Recompile with -Xlint:unchecked for details. [INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output [INFO] ------------------------------------------------------------- [ERROR] COMPILATION ERROR : [INFO] ------------------------------------------------------------- [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [INFO] 1 error [INFO] ------------------------------------------------------------- [INFO] ------------------------------------------------------------------------ [INFO] BUILD FAILURE [INFO] ------------------------------------------------------------------------ [INFO] Total time: 6.060 s [INFO] Finished at: 2026-09-14T15:57:52+02:00 [INFO] ------------------------------------------------------------------------ [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project FizzyGames: Compilation failure [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [ERROR] [ERROR] -> [Help 1] [ERROR] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch. [ERROR] Re-run Maven using the -X switch to enable full debug logging. [ERROR] [ERROR] For more information about the errors and possible solutions, please read the following articles: [ERROR] [Help 1] http://cwiki.apache.org/confl
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:7b
+
+======================================================================
+ERRORE OLLAMA
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 289, in ollama_request
+    raise RuntimeError(
+RuntimeError: Ollama HTTP 404:
+{"error":"model 'qwen2.5-coder:7b' not found"}
+
+======================================================================
+
+
+======================================================================
+SERVER ERROR POST
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 3372, in do_POST
+    ask(prompt)
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 289, in ollama_request
+    raise RuntimeError(
+RuntimeError: Ollama HTTP 404:
+{"error":"model 'qwen2.5-coder:7b' not found"}
+
+======================================================================
+
+[WEB] "POST /api/chat HTTP/1.1" 500 -
+
+Server stopped.
+
+======================================================================
+MINECRAFT AI PLUGIN BUILDER
+======================================================================
+Ollama URL: http://127.0.0.1:11434
+Modello: qwen2.5-coder:3b
+✓ Ollama online.
+✓ Modello 'qwen2.5-coder:3b' disponibile.
+
+======================================================================
+SERVER AVVIATO
+======================================================================
+Website: http://127.0.0.1:12000
+Ollama: http://127.0.0.1:11434
+Model: qwen2.5-coder:3b
+
+Premi CTRL+C per fermare il server.
+
+[WEB] "GET / HTTP/1.1" 200 -
+
+======================================================================
+WEB REQUEST
+======================================================================
+MODE: edit
+MODEL: qwen2.5-coder:3b
+Plugin: FizzyGames, I want so u can /vote Anvill Falling intead of /vote anvilfall, also, add a new game: Hide N seek, to the game rotation, that can be setup with /hidenseek, there is /hidenseek setworld, /hidenseek addhiderspawn, /hidenseek setlobby /hidenseek setcountingzone, /hidenseek setseekerspawn, and also make so you cant drop stuff while in game, hidenseek: The hider will have full netherite and one hit netherite sword and glowing, he will be tpd at Counting Zone at game start, but hiders will be tpd to Hider Spawns, the hiders will have 30 seconds to hide, then the seeker will be tpd at the Seeker Spawn and has to eliminate hiders, then hiders has to hide and not get cought, there is a 3 minute timer then the hiders wins, the timer will be shown in a seperate bossbar. Also make so the winning effect only plays when u win, not at loss or death. U CAN DO THIS. also fix this bug: ============================================================ TENTATIVO 1/5 ============================================================ MAVEN: compilazione... [INFO] Scanning for projects... [INFO] [INFO] ----------------------< it.fizzygames:FizzyGames >---------------------- [INFO] Building FizzyGames 1.0.0 [INFO] from pom.xml [INFO] --------------------------------[ jar ]--------------------------------- Downloading from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml Progress (1): 0.4/2.4 kB Progress (1): 1.7/2.4 kB Progress (1): 2.4 kB Downloaded from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml (2.4 kB at 3.8 kB/s) [INFO] [INFO] --- clean:3.2.0:clean (default-clean) @ FizzyGames --- [INFO] Deleting C:\MinecraftAI\projects\FizzyGames\target [INFO] [INFO] --- resources:3.4.0:resources (default-resources) @ FizzyGames --- [INFO] Copying 2 resources from src\main\resources to target\classes [INFO] [INFO] --- compiler:3.11.0:compile (default-compile) @ FizzyGames --- [INFO] Changes detected - recompiling the module! :source [INFO] Compiling 53 source files with javac [debug target 21] to target\classes [INFO] Annotation processing is enabled because one or more processors were found on the class path. A future release of javac may disable annotation processing unless at least one processor is specified by name (-processor), or a search path is specified (--processor-path, --processor-module-path), or annotation processing is enabled explicitly (-proc:only, -proc:full). Use -Xlint:-options to suppress this message. Use -proc:none to disable annotation processing. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Some input files use or override a deprecated API. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Recompile with -Xlint:deprecation for details. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: C:\MinecraftAI\projects\FizzyGames\src\main\java\it\fizzygames\bots\BotManager.java uses unchecked or unsafe operations. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: Recompile with -Xlint:unchecked for details. [INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output [INFO] ------------------------------------------------------------- [ERROR] COMPILATION ERROR : [INFO] ------------------------------------------------------------- [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [INFO] 1 error [INFO] ------------------------------------------------------------- [INFO] ------------------------------------------------------------------------ [INFO] BUILD FAILURE [INFO] ------------------------------------------------------------------------ [INFO] Total time: 6.060 s [INFO] Finished at: 2026-09-14T15:57:52+02:00 [INFO] ------------------------------------------------------------------------ [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project FizzyGames: Compilation failure [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [ERROR] [ERROR] -> [Help 1] [ERROR] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch. [ERROR] Re-run Maven using the -X switch to enable full debug logging. [ERROR] [ERROR] For more information about the errors and possible solutions, please read the following articles: [ERROR] [Help 1] http://cwiki.apache.org/confl
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:3b
+
+======================================================================
+ERRORE OLLAMA
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+
+======================================================================
+SERVER ERROR POST
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 3372, in do_POST
+    ask(prompt)
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+[WEB] "POST /api/chat HTTP/1.1" 500 -
+
+Server stopped.
+
+======================================================================
+MINECRAFT AI PLUGIN BUILDER
+======================================================================
+Ollama URL: http://127.0.0.1:11434
+Modello: qwen2.5-coder:3b
+✓ Ollama online.
+✓ Modello 'qwen2.5-coder:3b' disponibile.
+
+======================================================================
+SERVER AVVIATO
+======================================================================
+Website: http://127.0.0.1:12000
+Ollama: http://127.0.0.1:11434
+Model: qwen2.5-coder:3b
+
+Premi CTRL+C per fermare il server.
+
+[WEB] "GET / HTTP/1.1" 200 -
+
+======================================================================
+WEB REQUEST
+======================================================================
+MODE: edit
+MODEL: qwen2.5-coder:3b
+Plugin: FizzyGames, I want so u can /vote Anvill Falling intead of /vote anvilfall, also, add a new game: Hide N seek, to the game rotation, that can be setup with /hidenseek, there is /hidenseek setworld, /hidenseek addhiderspawn, /hidenseek setlobby /hidenseek setcountingzone, /hidenseek setseekerspawn, and also make so you cant drop stuff while in game, hidenseek: The hider will have full netherite and one hit netherite sword and glowing, he will be tpd at Counting Zone at game start, but hiders will be tpd to Hider Spawns, the hiders will have 30 seconds to hide, then the seeker will be tpd at the Seeker Spawn and has to eliminate hiders, then hiders has to hide and not get cought, there is a 3 minute timer then the hiders wins, the timer will be shown in a seperate bossbar. Also make so the winning effect only plays when u win, not at loss or death. U CAN DO THIS. also fix this bug: ============================================================ TENTATIVO 1/5 ============================================================ MAVEN: compilazione... [INFO] Scanning for projects... [INFO] [INFO] ----------------------< it.fizzygames:FizzyGames >---------------------- [INFO] Building FizzyGames 1.0.0 [INFO] from pom.xml [INFO] --------------------------------[ jar ]--------------------------------- Downloading from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml Progress (1): 0.4/2.4 kB Progress (1): 1.7/2.4 kB Progress (1): 2.4 kB Downloaded from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml (2.4 kB at 3.8 kB/s) [INFO] [INFO] --- clean:3.2.0:clean (default-clean) @ FizzyGames --- [INFO] Deleting C:\MinecraftAI\projects\FizzyGames\target [INFO] [INFO] --- resources:3.4.0:resources (default-resources) @ FizzyGames --- [INFO] Copying 2 resources from src\main\resources to target\classes [INFO] [INFO] --- compiler:3.11.0:compile (default-compile) @ FizzyGames --- [INFO] Changes detected - recompiling the module! :source [INFO] Compiling 53 source files with javac [debug target 21] to target\classes [INFO] Annotation processing is enabled because one or more processors were found on the class path. A future release of javac may disable annotation processing unless at least one processor is specified by name (-processor), or a search path is specified (--processor-path, --processor-module-path), or annotation processing is enabled explicitly (-proc:only, -proc:full). Use -Xlint:-options to suppress this message. Use -proc:none to disable annotation processing. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Some input files use or override a deprecated API. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Recompile with -Xlint:deprecation for details. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: C:\MinecraftAI\projects\FizzyGames\src\main\java\it\fizzygames\bots\BotManager.java uses unchecked or unsafe operations. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: Recompile with -Xlint:unchecked for details. [INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output [INFO] ------------------------------------------------------------- [ERROR] COMPILATION ERROR : [INFO] ------------------------------------------------------------- [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [INFO] 1 error [INFO] ------------------------------------------------------------- [INFO] ------------------------------------------------------------------------ [INFO] BUILD FAILURE [INFO] ------------------------------------------------------------------------ [INFO] Total time: 6.060 s [INFO] Finished at: 2026-09-14T15:57:52+02:00 [INFO] ------------------------------------------------------------------------ [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project FizzyGames: Compilation failure [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [ERROR] [ERROR] -> [Help 1] [ERROR] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch. [ERROR] Re-run Maven using the -X switch to enable full debug logging. [ERROR] [ERROR] For more information about the errors and possible solutions, please read the following articles: [ERROR] [Help 1] http://cwiki.apache.org/confl
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:3b
+
+======================================================================
+ERRORE OLLAMA
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+
+======================================================================
+SERVER ERROR POST
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 3372, in do_POST
+    ask(prompt)
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+[WEB] "POST /api/chat HTTP/1.1" 500 -
+[WEB] "GET /api/settings HTTP/1.1" 200 -
+[WEB] "POST /api/settings HTTP/1.1" 200 -
+[WEB] "GET /api/ollama/test HTTP/1.1" 200 -
+
+======================================================================
+WEB REQUEST
+======================================================================
+MODE: edit
+MODEL: qwen2.5-coder:1.5b
+Plugin: FizzyGames, I want so u can /vote Anvill Falling intead of /vote anvilfall, also, add a new game: Hide N seek, to the game rotation, that can be setup with /hidenseek, there is /hidenseek setworld, /hidenseek addhiderspawn, /hidenseek setlobby /hidenseek setcountingzone, /hidenseek setseekerspawn, and also make so you cant drop stuff while in game, hidenseek: The hider will have full netherite and one hit netherite sword and glowing, he will be tpd at Counting Zone at game start, but hiders will be tpd to Hider Spawns, the hiders will have 30 seconds to hide, then the seeker will be tpd at the Seeker Spawn and has to eliminate hiders, then hiders has to hide and not get cought, there is a 3 minute timer then the hiders wins, the timer will be shown in a seperate bossbar. Also make so the winning effect only plays when u win, not at loss or death. U CAN DO THIS. also fix this bug: ============================================================ TENTATIVO 1/5 ============================================================ MAVEN: compilazione... [INFO] Scanning for projects... [INFO] [INFO] ----------------------< it.fizzygames:FizzyGames >---------------------- [INFO] Building FizzyGames 1.0.0 [INFO] from pom.xml [INFO] --------------------------------[ jar ]--------------------------------- Downloading from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml Progress (1): 0.4/2.4 kB Progress (1): 1.7/2.4 kB Progress (1): 2.4 kB Downloaded from papermc-repo: https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/1.20.6-R0.1-SNAPSHOT/maven-metadata.xml (2.4 kB at 3.8 kB/s) [INFO] [INFO] --- clean:3.2.0:clean (default-clean) @ FizzyGames --- [INFO] Deleting C:\MinecraftAI\projects\FizzyGames\target [INFO] [INFO] --- resources:3.4.0:resources (default-resources) @ FizzyGames --- [INFO] Copying 2 resources from src\main\resources to target\classes [INFO] [INFO] --- compiler:3.11.0:compile (default-compile) @ FizzyGames --- [INFO] Changes detected - recompiling the module! :source [INFO] Compiling 53 source files with javac [debug target 21] to target\classes [INFO] Annotation processing is enabled because one or more processors were found on the class path. A future release of javac may disable annotation processing unless at least one processor is specified by name (-processor), or a search path is specified (--processor-path, --processor-module-path), or annotation processing is enabled explicitly (-proc:only, -proc:full). Use -Xlint:-options to suppress this message. Use -proc:none to disable annotation processing. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Some input files use or override a deprecated API. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/ArenaManager.java: Recompile with -Xlint:deprecation for details. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: C:\MinecraftAI\projects\FizzyGames\src\main\java\it\fizzygames\bots\BotManager.java uses unchecked or unsafe operations. [INFO] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/bots/BotManager.java: Recompile with -Xlint:unchecked for details. [INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output [INFO] ------------------------------------------------------------- [ERROR] COMPILATION ERROR : [INFO] ------------------------------------------------------------- [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [INFO] 1 error [INFO] ------------------------------------------------------------- [INFO] ------------------------------------------------------------------------ [INFO] BUILD FAILURE [INFO] ------------------------------------------------------------------------ [INFO] Total time: 6.060 s [INFO] Finished at: 2026-09-14T15:57:52+02:00 [INFO] ------------------------------------------------------------------------ [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project FizzyGames: Compilation failure [ERROR] /C:/MinecraftAI/projects/FizzyGames/src/main/java/it/fizzygames/managers/HideNSeekManager.java:[253,94] incompatible types: org.bukkit.NamespacedKey cannot be converted to java.util.UUID [ERROR] [ERROR] -> [Help 1] [ERROR] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch. [ERROR] Re-run Maven using the -X switch to enable full debug logging. [ERROR] [ERROR] For more information about the errors and possible solutions, please read the following articles: [ERROR] [Help 1] http://cwiki.apache.org/confl
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+
+======================================================================
+ERRORE OLLAMA
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+
+======================================================================
+SERVER ERROR POST
+======================================================================
+Traceback (most recent call last):
+  File "C:\MinecraftAI\app.py", line 3372, in do_POST
+    ask(prompt)
+  File "C:\MinecraftAI\app.py", line 493, in ask
+    result = ollama_request(
+             ^^^^^^^^^^^^^^^
+  File "C:\MinecraftAI\app.py", line 263, in ollama_request
+    with urllib.request.urlopen(
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\urllib\request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+======================================================================
+
+[WEB] "POST /api/chat HTTP/1.1" 500 -
+
+======================================================================
+WEB REQUEST
+======================================================================
+MODE: create
+MODEL: qwen2.5-coder:1.5b
+Plugin name: ollahello, author: netherite_stair. Version: Paper 1.20.6 .Create a Paper Minecraft plugin with /hello. Return only the complete Java class, no JSON, no pom.xml, no plugin.yml, no explanation.
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+Risposta ricevuta: 182 caratteri
+AI: genero il plugin...
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+Risposta ricevuta: 2085 caratteri
+Creato/Modificato: pom.xml
+Creato/Modificato: src/main/java/com/example/Main.java
+Creato/Modificato: src/main/resources/plugin.yml
+
+======================================================================
+TENTATIVO 1/5
+======================================================================
+
+MAVEN: compilazione...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:ollahello >------------------------
+[INFO] Building ollahello 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom
+Progress (1): 755 B
+Progress (1): 1.7 kB
+Progress (1): 3.3 kB
+Progress (1): 7.2 kB
+Progress (1): 9.0 kB
+Progress (1): 12 kB 
+Progress (1): 12 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom (12 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom
+Progress (1): 758 B
+Progress (1): 1.7 kB
+Progress (1): 3.7 kB
+Progress (1): 6.9 kB
+Progress (1): 8.5 kB
+Progress (1): 11 kB 
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom (11 kB at 135 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar
+Progress (1): 0.9/62 kB
+Progress (1): 2.3/62 kB
+Progress (1): 3.6/62 kB
+Progress (1): 5.0/62 kB
+Progress (1): 6.4/62 kB
+Progress (1): 7.7/62 kB
+Progress (1): 9.1/62 kB
+Progress (1): 10/62 kB 
+Progress (1): 11/62 kB
+Progress (1): 13/62 kB
+Progress (1): 14/62 kB
+Progress (1): 15/62 kB
+Progress (1): 17/62 kB
+Progress (1): 18/62 kB
+Progress (1): 20/62 kB
+Progress (1): 21/62 kB
+Progress (1): 22/62 kB
+Progress (1): 24/62 kB
+Progress (1): 25/62 kB
+Progress (1): 26/62 kB
+Progress (1): 28/62 kB
+Progress (1): 29/62 kB
+Progress (1): 31/62 kB
+Progress (1): 32/62 kB
+Progress (1): 33/62 kB
+Progress (1): 35/62 kB
+Progress (1): 36/62 kB
+Progress (1): 37/62 kB
+Progress (1): 39/62 kB
+Progress (1): 40/62 kB
+Progress (1): 41/62 kB
+Progress (1): 43/62 kB
+Progress (1): 44/62 kB
+Progress (1): 48/62 kB
+Progress (1): 53/62 kB
+Progress (1): 57/62 kB
+Progress (1): 61/62 kB
+Progress (1): 62 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar (62 kB at 731 kB/s)
+[WARNING] The POM for org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.400 s
+[INFO] Finished at: 2026-09-14T20:17:33+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project ollahello: Could not resolve dependencies for project com.example:ollahello:jar:1.0-SNAPSHOT
+[ERROR] dependency: org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT (provided)
+[ERROR] 	Could not find artifact org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+
+BUILD FAILURE
+AI: correggo il progetto...
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+Risposta ricevuta: 1282 caratteri
+Creato/Modificato: pom.xml
+Creato/Modificato: src/main/resources/plugin.yml
+
+======================================================================
+TENTATIVO 2/5
+======================================================================
+
+MAVEN: compilazione...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:ollahello >------------------------
+[INFO] Building ollahello 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.017 s
+[INFO] Finished at: 2026-09-14T20:19:15+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project ollahello: Could not resolve dependencies for project com.example:ollahello:jar:1.0-SNAPSHOT
+[ERROR] dependency: org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT (provided)
+[ERROR] 	Could not find artifact org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+
+BUILD FAILURE
+AI: correggo il progetto...
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+Risposta ricevuta: 1282 caratteri
+Creato/Modificato: pom.xml
+Creato/Modificato: src/main/resources/plugin.yml
+
+======================================================================
+TENTATIVO 3/5
+======================================================================
+
+MAVEN: compilazione...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:ollahello >------------------------
+[INFO] Building ollahello 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.371 s
+[INFO] Finished at: 2026-09-14T20:20:30+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project ollahello: Could not resolve dependencies for project com.example:ollahello:jar:1.0-SNAPSHOT
+[ERROR] dependency: org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT (provided)
+[ERROR] 	Could not find artifact org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+
+BUILD FAILURE
+AI: correggo il progetto...
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+Risposta ricevuta: 1282 caratteri
+Creato/Modificato: pom.xml
+Creato/Modificato: src/main/resources/plugin.yml
+
+======================================================================
+TENTATIVO 4/5
+======================================================================
+
+MAVEN: compilazione...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:ollahello >------------------------
+[INFO] Building ollahello 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.457 s
+[INFO] Finished at: 2026-09-14T20:21:54+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project ollahello: Could not resolve dependencies for project com.example:ollahello:jar:1.0-SNAPSHOT
+[ERROR] dependency: org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT (provided)
+[ERROR] 	Could not find artifact org.spigotmc:spigot-api:jar:1.16.5-R0.1-SNAPSHOT
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+
+BUILD FAILURE
+AI: correggo il progetto...
+
+======================================================================
+OLLAMA REQUEST
+======================================================================
+Model: qwen2.5-coder:1.5b
+
+Server stopped.

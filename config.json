@@ -1,0 +1,5 @@
+{
+    "api_key": "key",
+    "ollama_url": "http://127.0.0.1:11434",
+    "model": "openrouter/free"
+}
